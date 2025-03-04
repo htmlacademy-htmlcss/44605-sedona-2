@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 - Студент: [Дмитрий Гилёв](https://up.htmlacademy.ru/htmlcss-individual/2/user/44605).
-- Наставник: [Станислав Михайлов] (https://htmlacademy.ru/profile/id139638).
+- Наставник: [Станислав Михайлов](https://htmlacademy.ru/profile/id139638).
 - Мой проект Sedona: [Мой проект](https://mg-kem.github.io/44605-sedona-2/)
 
 ---
