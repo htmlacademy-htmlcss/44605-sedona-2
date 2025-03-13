@@ -5,11 +5,11 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="header-content">
+    <header class="header-content" data-test="header">
       <!-- Логотип ссылка -->
       <!--Чтобы не перезагружать страницу, используем заглушку-->
       <a class="header-navigation-link" href="#">
-        <img class="header-logo" src="./img/logo.svg" />
+        <img class="header-logo" src="img/logo.svg" width="140" height="70" />
       </a>
       <!-- Блок навигации по сайту -->
       <nav class="header-navigation">
@@ -41,25 +41,40 @@
         </ul>
       </nav>
     </header>
-    <main class="main-content">
+    <main class="main-content" data-test="main">
       <!-- Приветственный HERO-блок -->
-      <section class="hero">
+      <section class="hero" data-test="hero">
         <h1 class="visually-hidden title">Sedona - город в Аризоне</h1>
-        <img src="./img/Vector.png" alt="Welcome" />
-        <img src="./img/Vector (1).png" alt="to the garheous" />
-        <img src="./img/Vector (2).png" alt="Because the Grand Cfnyon sucks" />
+        <img
+          src="img/index-background.jpg"
+          width="1200"
+          height="485"
+          alt="Пейзаж Седоны"
+        />
+        <img src="img/Vector-Welcome.png" alt="Welcome" />
+        <img src="img/Vector-to-the-gargeous.png" alt="to the garheous" />
+        <img
+          src="/img/Vector-Sedona.png"
+          alt="Because the Grand Cfnyon sucks"
+        />
         <h2>Седона - небольшой городок в Аризоне, заслуживающий большего</h2>
         <p class="advantages-content">
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон
         </p>
       </section>
       <!-- Преимущества -->
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <ul class="advantages-content-list">
           <li class="advantages-content-item">Настоящий городок</li>
           <p class="advantages-content">
             Седона — не аттракцион для туристов, там течёт своя жизнь
           </p>
+          <img
+            src="img/photo-1.jpg"
+            width="800"
+            height="385"
+            alt="Локация в городе"
+          />
           <li class="advantages-content-item">Небольшая площадь</li>
           <p class="advantages-content">
             Все достопримечательности находятся очень близко
@@ -72,6 +87,12 @@
           <p class="advantages-content">
             Большинство едет в Гранд Каньон и толпится там
           </p>
+          <img
+            src="img/photo-2.jpg"
+            width="800"
+            height="385"
+            alt="Каменистые скалы"
+          />
           <li class="advantages-content-item">Там есть мост дьявола</li>
           <p class="advantages-content">
             Да, по нему можно пройти! Если вы осмелитесь, разумеется
@@ -88,14 +109,22 @@
       <!-- Возможности -->
       <section class="possibility">
         <ul class="possibility-list">
+          <img src="img/Vector-home.svg" width="75" height="72" alt="Домик" />
           <li class="possibility-item">Жилье</li>
           <p class="possibility-content">
             Рекомендуем пожить в настоящем мотеле, всё как в кино!
           </p>
+          <img src="img/food.svg" width="74" height="70" alt="Бургер" />
           <li class="possibility-item">Еда</li>
           <p class="possibility-content">
             Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
           </p>
+          <img
+            src="img/Vector-present.svg"
+            width="64"
+            height="76"
+            alt="Презент"
+          />
           <li class="possibility-item">Сувениры</li>
           <p class="possibility-content">
             Не только китайского, но и настоящего местного производства!
@@ -103,7 +132,7 @@
         </ul>
       </section>
       <!-- Поиск -->
-      <section class="search">
+      <section class="search" data-test="search">
         <h2>Заинтересовались?</h2>
         <p class="search-content">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
@@ -112,7 +141,8 @@
         <a class="search-link" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
       <!-- Подписка -->
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
+        <img src="#" alt="Заблюренный фон пейзажа гор Седоны" />
         <h2>Подпишитесь на рассылку</h2>
         <p class="subscribe-content">
           Только полезная информация и никакого спама, честное бойскаутское
@@ -135,31 +165,46 @@
         </form>
       </section>
     </main>
-    <footer class="footer-content">
+    <footer class="footer-content" data-test="footer">
       <div class="contacts">
         <ul class="contacts-list">
           <li class="contacts-item">
             <a class="contacts-link" href="#">
-              <img src="./img/logotype-VK.png" alt="Логотип сайта Вконтакте" />
+              <img
+                src="img/logotype-VK.png"
+                width="24"
+                height="14"
+                alt="Логотип сайта Вконтакте"
+              />
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="contacts-item">
             <a class="contacts-link" href="#">
-              <img src="./img/logotype-TELEGRAM.png" alt="Логотип Телеграмм" />
+              <img
+                src="img/logotype-TELEGRAM.png"
+                width="18"
+                height="15"
+                alt="Логотип Телеграмм"
+              />
               <span class="visually-hidden">Телеграмм</span>
             </a>
           </li>
           <li class="contacts-item">
             <a class="contacts-link" href="#">
-              <img src="./img/Logotype-YOUTUBE.png" alt="Логотип сайта Ютуб" />
+              <img
+                src="img/Logotype-YOUTUBE.png"
+                width="22"
+                height="17"
+                alt="Логотип сайта Ютуб"
+              />
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
         </ul>
         <a class="contacts-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="contacts-link" href="https://htmlacademy.ru">
-          <img src="./img/logo_htmlacademy.png" alt="Логотип HTML академии" />
+          <img src="img/logo_htmlacademy.png" alt="Логотип HTML академии" />
           <span class="visually-hidden">htmlacademy</span>
         </a>
       </div>
