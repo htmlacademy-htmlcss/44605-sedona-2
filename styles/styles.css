@@ -461,3 +461,24 @@ body {
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
 }
+
+/* Стилизация страницы "catalog.html" */
+/* Стилизация секции "filter" */
+.filter {
+  background-image: url("../img/blur-filter.jpg");
+  background-size: 100%;
+}
+
+.filter-title {
+  font-family: PT Sans;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 1);
+}
+
+.filter-choise {
+  display: flex;
+  justify-content: space-between;
+}
