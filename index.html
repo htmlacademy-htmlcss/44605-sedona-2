@@ -5,16 +5,15 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css"
   </head>
+
   <body>
     <header class="header-content" data-test="header">
-      <!-- Логотип ссылка -->
       <!-- Блок навигации по сайту -->
       <nav class="header-navigation">
         <p class="logo">
-          <!--Чтобы не перезагружать страницу, используем заглушку-->
           <a href="#">
             <img
-              src="img/logo.svg"
+              src="img/svg/header-logo.svg"
               width="140"
               height="70"
               alt="Логотип Sedona"
@@ -36,17 +35,17 @@
           <li class="header-navigation-item">
             <a class="search-header" href="#">
               <span class="visually-hidden">Поиск</span>
-              <img src="img/icons/Search.png" />
+              <img src="img/svg/search.svg" />
             </a>
           </li>
           <li class="header-navigation-item">
             <a class="favourites" href="#">
               <span class="visually-hidden">Избранное</span>
-              <img src="img/icons/Favourites.png" />
+              <img src="img/svg/Vector-like.svg" />
             </a>
           </li>
           <li class="header-navigation-item">
-            <a href="#">Хочу сюда</a>
+            <a class="button-link" href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>
@@ -56,13 +55,14 @@
       <section class="hero" data-test="hero">
         <div class="background-container">
           <h1 class="visually-hidden title">Sedona - город в Аризоне</h1>
-          <img src="img/welcome-block.svg" alt="Приветствие" />
+          <img src="img/svg/welcome-block.svg" alt="Приветствие" />
         </div>
         <div class="hero-content">
           <h2>Седона - небольшой городок в Аризоне, заслуживающий большего</h2>
           <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
       </section>
+
       <!-- Преимущества -->
       <article class="advantages advantages-block-1">
         <div class="advantages-content">
@@ -120,13 +120,14 @@
           Опытный персонал и качественное обслуживание
         </p>
       </section>
+
       <!-- Возможности -->
       <section class="possibility">
         <ul class="possibility-list">
           <li class="possibility-item">
             <div class="possibility-content">
               <img
-                src="img/Vector-home.svg"
+                src="img/svg/Vector-home.svg"
                 width="75"
                 height="72"
                 alt="Домик"
@@ -138,7 +139,12 @@
 
           <li class="possibility-item">
             <div class="possibility-content">
-              <img src="img/food.svg" width="74" height="70" alt="Бургер" />
+              <img
+                src="img/svg/burger.svg"
+                width="74"
+                height="70"
+                alt="Бургер"
+              />
               <h3>Еда</h3>
               <p>
                 Всегда заказывайте топовый фирменный бургер, вы не
@@ -150,7 +156,7 @@
           <li class="possibility-item">
             <div class="possibility-content">
               <img
-                src="img/Vector-present.svg"
+                src="img/svg/Vector-present.svg"
                 width="64"
                 height="76"
                 alt="Презент"
@@ -163,6 +169,7 @@
           </li>
         </ul>
       </section>
+
       <!-- Поиск -->
       <section class="search" data-test="search">
         <div class="frame-search">
@@ -176,6 +183,7 @@
           >
         </div>
       </section>
+
       <!-- Подписка -->
       <section class="subscribe" data-test="subscribe">
         <div class="subscribe-content">
@@ -204,50 +212,46 @@
       </section>
     </main>
     <footer class="footer-content" data-test="footer">
-      <div class="contacts">
-        <ul class="contacts-list">
-          <li class="contacts-item">
-            <a class="contacts-link" href="#">
-              <img
-                src="img/logotype-VK.png"
-                width="24px"
-                height="14px"
-                alt="Логотип сайта Вконтакте"
-              />
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="contacts-item">
-            <a class="contacts-link" href="#">
-              <img
-                src="img/logotype-TELEGRAM.png"
-                width="18px"
-                height="15px"
-                alt="Логотип Телеграмм"
-              />
-              <span class="visually-hidden">Телеграмм</span>
-            </a>
-          </li>
-          <li class="contacts-item">
-            <a class="contacts-link" href="#">
-              <img
-                src="img/Logotype-YOUTUBE.png"
-                width="22px"
-                height="17px"
-                alt="Логотип сайта Ютуб"
-              />
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-        </ul>
-        <a class="contacts-tel" href="tel:+78128121212">
-          <p>+7 (812) 812-12-12</p>
-        </a>
-        <a class="contacts-link" href="https://htmlacademy.ru">
-          <img src="img/logo_htmlacademy.png" alt="Логотип HTML академии" />
-          <span class="visually-hidden">htmlacademy</span>
-        </a>
-      </div>
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <img
+              src="img/svg/logotype-VK.svg"
+              width="24px"
+              height="14px"
+              alt="Логотип сайта Вконтакте"
+            />
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <img
+              src="img/svg/logotype_TG.svg"
+              width="18px"
+              height="15px"
+              alt="Логотип Телеграмм"
+            />
+            <span class="visually-hidden">Телеграмм</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <img
+              src="img/svg/logotype-youtube.svg"
+              width="22px"
+              height="17px"
+              alt="Логотип сайта Ютуб"
+            />
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+      <a class="contacts-phone" href="tel:+78128121212"> +7 (812) 812-12-12 </a>
+      <a class="developer-logotype" href="https://htmlacademy.ru">
+        <img src="img/logo_htmlacademy.png" alt="Логотип HTML академии" />
+        <span class="visually-hidden">htmlacademy</span>
+      </a>
     </footer>
   </body>
 </html>
