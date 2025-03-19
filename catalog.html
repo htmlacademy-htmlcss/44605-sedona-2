@@ -10,7 +10,7 @@
       <!-- Блок навигации по сайту -->
       <nav class="header-navigation">
         <p class="logo">
-          <a href="#">
+          <a href="index.html">
             <img
               src="img/svg/header-logo.svg"
               width="140"
@@ -21,13 +21,13 @@
         </p>
         <ul class="header-navigation-list">
           <li class="header-navigation-item">
-            <a class="active-link" href="#">Главная</a>
+            <a class="active-link" href="index.html">Главная</a>
           </li>
           <li class="header-navigation-item">
             <a href="#">О Седоне</a>
           </li>
           <li class="header-navigation-item">
-            <a href="catalog.html">Гостиницы</a>
+            <a href="#">Гостиницы</a>
           </li>
         </ul>
         <ul class="header-navigation-list navigation-user">
@@ -303,56 +303,72 @@
       </section>
       <!-- Подписка -->
       <section class="subscribe" data-test="subscribe">
-        <h2>Подпишитесь на рассылку</h2>
-        <p class="subscribe-content">
-          Только полезная информация и никакого спама, честное бойскаутское
-        </p>
-        <form
-          class="subscribe-form"
-          action="https://echo.htmlacademy.ru"
-          method="post"
-        >
-          <label class="visually-hidden" for="email-subscribe"
-            >Введите e-mail</label
+        <div class="subscribe-content">
+          <h2>Подпишитесь на рассылку</h2>
+          <p>
+            Только полезная информация и никакого спама, честное бойскаутское
+          </p>
+
+          <form
+            class="subscribe-form"
+            action="https://echo.htmlacademy.ru"
+            method="post"
           >
-          <input
-            type="text"
-            placeholder="Ваш e-mail"
-            name="email-subscribe"
-            id="email-subscribe"
-          />
-          <button class="subscribe-button" type="submit">Подписаться</button>
-        </form>
+            <label class="visually-hidden" for="email-subscribe"
+              >Введите e-mail</label
+            >
+            <input
+              type="text"
+              placeholder="Ваш e-mail"
+              name="email-subscribe"
+              id="email-subscribe"
+            />
+            <button class="subscribe-button" type="submit">Подписаться</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer-content" data-test="footer">
-      <div class="contacts">
-        <ul class="contacts-list">
-          <li class="contacts-item">
-            <a class="contacts-link" href="#">
-              <img src="img/logotype-VK.png" alt="Логотип сайта Вконтакте" />
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="contacts-item">
-            <a class="contacts-link" href="#">
-              <img src="img/logotype-TELEGRAM.png" alt="Логотип Телеграмм" />
-              <span class="visually-hidden">Телеграмм</span>
-            </a>
-          </li>
-          <li class="contacts-item">
-            <a class="contacts-link" href="#">
-              <img src="img/Logotype-YOUTUBE.png" alt="Логотип сайта Ютуб" />
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-        </ul>
-        <a class="contacts-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="contacts-link" href="https://htmlacademy.ru">
-          <img src="./img/logo_htmlacademy.png" alt="Логотип HTML академии" />
-          <span class="visually-hidden">htmlacademy</span>
-        </a>
-      </div>
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <img
+              src="img/svg/logotype-VK.svg"
+              width="24px"
+              height="14px"
+              alt="Логотип сайта Вконтакте"
+            />
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <img
+              src="img/svg/logotype_TG.svg"
+              width="18px"
+              height="15px"
+              alt="Логотип Телеграмм"
+            />
+            <span class="visually-hidden">Телеграмм</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <img
+              src="img/svg/logotype-youtube.svg"
+              width="22px"
+              height="17px"
+              alt="Логотип сайта Ютуб"
+            />
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+      <a class="contacts-phone" href="tel:+78128121212"> +7 (812) 812-12-12 </a>
+      <a class="developer-logotype" href="https://htmlacademy.ru">
+        <img src="img/logo_htmlacademy.png" alt="Логотип HTML академии" />
+        <span class="visually-hidden">htmlacademy</span>
+      </a>
     </footer>
   </body>
 </html>
