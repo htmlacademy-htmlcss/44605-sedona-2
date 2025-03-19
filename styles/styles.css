@@ -26,18 +26,34 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
 .visually-hidden {
   display: none;
 }
-
 /* HEADER */
 
 .header-navigation {
   display: flex;
   align-items: center;
-  width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 70px;
 }
 
 .logo {
@@ -45,12 +61,12 @@
   height: 70px;
   margin: 0;
   margin-right: 30px;
-  margin-left: 70px;
 }
 
 .header-navigation-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -59,9 +75,6 @@
   margin-right: 285px;
 }
 
-.header-navigation-list.navigation-user {
-  margin-right: 70px;
-}
 .header-navigation-item:not(:last-child) {
   margin-right: 32px;
 }
@@ -100,7 +113,6 @@
 .hero {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
 }
 .background-container {
   background-image: url("../img/index-background.jpg");
@@ -196,8 +208,8 @@
 .advantages-block-2 .advantages-content div {
   width: 230px;
   height: 160px;
-  margin-top: 102px;
-  margin-bottom: 102px;
+  margin-top: 112px;
+  margin-bottom: 112px;
   margin-left: 85px;
   margin-right: 85px;
 }
@@ -223,7 +235,6 @@
 .action {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
 }
 
 .action h2 {
@@ -253,7 +264,6 @@
 
 .possibility {
   width: 1200px;
-  padding: 0 40px;
   margin: 0 auto;
 }
 .possibility-list {
@@ -291,6 +301,7 @@
   letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
+  margin: 30px 0;
 }
 
 .possibility-content p {
@@ -304,19 +315,19 @@
 
 .search {
   width: 1200px;
+  /*
   margin: 0 auto;
-  padding: 0 40px;
   padding-top: 96px;
   padding-right: 40px;
   padding-bottom: 96px;
   padding-left: 40px;
   gap: 10px;
+  */
 }
 
 .frame-search {
   width: 592px;
-  height: 214px;
-  margin: 0 auto;
+  margin: 95px auto;
   text-align: center;
 }
 
@@ -344,8 +355,8 @@
 }
 
 .frame-search a {
-  width: 376;
-  height: 52;
+  width: 376px;
+  height: 52px;
   padding-top: 8px;
   padding-right: 50px;
   padding-bottom: 8px;
@@ -355,17 +366,16 @@
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
   text-align: center;
-  margin-bottom: 96px;
 }
 
 .subscribe {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
 }
 
 .subscribe-content {
   background-image: url("../img/subscription-background.jpg");
+  background-size: 100%;
   padding-top: 96px;
   padding-right: 258px;
   padding-bottom: 104px;
@@ -393,24 +403,10 @@
   color: rgba(255, 255, 255, 1);
 }
 
-.subscribe-form label {
-  font-family: PT Sans;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0%;
-  vertical-align: middle;
-}
-.subscribe-form input {
-  width: 452px;
-  height: 52px;
-  /* padding-top: 12px; */
-  padding-right: 20px;
-  /* padding-bottom: 12px; */
-  padding-left: 20px;
-  gap: 260px;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+.subscribe-form {
+  display: grid;
+  grid-template-columns: 1fr 232px;
+  margin-top: 54px;
 }
 
 .subscribe-form button {
@@ -437,35 +433,24 @@
 }
 
 .footer-content {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 40px;
-}
-
-.contacts {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 70px;
-  margin-top: 40px;
-  margin-bottom: 30px;
-}
-.contacts-list {
-  display: flex;
-  align-items: center;
-  width: 142px;
-  justify-content: space-between;
+  padding: 40px 70px 30px;
 }
 
-.contacts-tel {
-  width: 720px;
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.social-item {
+  display: block;
+  width: 47px;
+  height: 40px;
+  place-content: center;
   text-align: center;
-  text-decoration: none;
-  color: rgba(0, 0, 0, 1);
 }
-
-.contacts-tel p {
-  margin: 0;
+.contacts-phone {
   font-family: PT Sans;
   font-weight: 400;
   font-size: 40px;
@@ -473,14 +458,6 @@
   letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
-}
-
-.contacts-list,
-.contacts-item {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.contacts-item {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
 }

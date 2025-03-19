@@ -3,40 +3,48 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css"
   </head>
   <body>
     <header class="header-content" data-test="header">
-      <!-- Логотип ссылка -->
-      <!--Чтобы не перезагружать страницу, используем заглушку-->
-      <a class="header-navigation-link" href="index.html">
-        <img class="header-logo" src="img/logo.svg" width="140" height="70" />
-      </a>
       <!-- Блок навигации по сайту -->
       <nav class="header-navigation">
+        <p class="logo">
+          <a href="#">
+            <img
+              src="img/svg/header-logo.svg"
+              width="140"
+              height="70"
+              alt="Логотип Sedona"
+            />
+          </a>
+        </p>
         <ul class="header-navigation-list">
           <li class="header-navigation-item">
-            <a class="header-navigation-link" href="index.html">Главная</a>
+            <a class="active-link" href="#">Главная</a>
           </li>
           <li class="header-navigation-item">
-            <a class="header-navigation-link" href="#">О Седоне</a>
+            <a href="#">О Седоне</a>
           </li>
           <li class="header-navigation-item">
-            <a class="header-navigation-link" href="#">Гостиницы</a>
+            <a href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="header-navigation-list navigation-user">
           <li class="header-navigation-item">
-            <a class="header-navigation-link" href="#">
-              <span class="visually-hidden">Вход</span></a
-            >
+            <a class="search-header" href="#">
+              <span class="visually-hidden">Поиск</span>
+              <img src="img/svg/search.svg" />
+            </a>
           </li>
           <li class="header-navigation-item">
-            <a class="header-navigation-link" href="#">
-              <span class="visually-hidden">Избранное</span></a
-            >
+            <a class="favourites" href="#">
+              <span class="visually-hidden">Избранное</span>
+              <img src="img/svg/Vector-like.svg" />
+            </a>
           </li>
           <li class="header-navigation-item">
-            <a class="header-navigation-link" href="#">Хочу сюда</a>
+            <a class="button-link" href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>
