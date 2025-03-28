@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="styles/styles.css" </head>
-
+    <link rel="stylesheet" href="styles/style.css"
+  </head>
   <body>
     <header class="header-content" data-test="header">
       <!-- Блок навигации по сайту -->
       <nav class="header-navigation">
-        <p class="logo">
-          <a href="index.html">
-            <img src="img/svg/header-logo.svg" width="140" height="70" alt="Логотип Sedona" />
-          </a>
-        </p>
+        <a class="header-logo" href="#">
+          <img
+            src="img/svg/header-logo.svg"
+            width="140"
+            height="70"
+            alt="Логотип Sedona"
+          />
+        </a>
         <ul class="header-navigation-list">
           <li class="header-navigation-item">
-            <a class="active-link" href="index.html">Главная</a>
+            <a class="active-link" href="#">Главная</a>
           </li>
           <li class="header-navigation-item">
             <a href="#">О Седоне</a>
           </li>
           <li class="header-navigation-item">
-            <a href="#">Гостиницы</a>
+            <a href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="header-navigation-list navigation-user">
@@ -40,21 +42,25 @@
             </a>
           </li>
           <li class="header-navigation-item">
-            <a class="button-link" href="#">Хочу сюда</a>
+            <a class="button button-header brown" href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="catalog-content" data-test="main">
-
+    <main class="catalog-content container-grow" data-test="main">
       <!--Фильтрация отелей-->
+
       <section class="filter" data-test="filter">
         <header class="filter-header">
-          <h1 class="filter-title">Гостиницы Седоны</h1>
+          <h1 class="title">Гостиницы Седоны</h1>
           <ul class="breadcrubs-list">
             <li class="breadcrubs-item">
               <a class="breadcrubs-link" href="index.html">
-                <img src="img/vector-HOME.svg" width="12" height="12" />
+                <img
+                  src="img/svg/Vector-breadcrumbs.svg"
+                  width="12"
+                  height="12"
+                />
                 <span class="visually-hidden">Домой</span>
               </a>
             </li>
@@ -65,8 +71,13 @@
             </li>
           </ul>
         </header>
-        <form class="filter-choise" method="get" action="https://echo.htmlacademy.ru">
+        <form
+          class="filter-choise"
+          method="get"
+          action="https://echo.htmlacademy.ru"
+        >
           <!--Выбор инфраструктуры(checkbox)-->
+
           <fieldset class="checkbox-set">
             <legend class="checkbox-title-heading">Инфраструктура:</legend>
             <ul class="checkbox-list">
@@ -84,7 +95,9 @@
               </li>
             </ul>
           </fieldset>
+
           <!--Выбор типа жилья (radio)-->
+
           <fieldset class="radio-set">
             <legend class="radio-title-heading">Тип жилья:</legend>
             <ul class="radio-list">
@@ -102,30 +115,43 @@
               </li>
             </ul>
           </fieldset>
+
           <!--Параметры стоимости (text от и до)-->
+
           <fieldset class="text-set">
             <legend class="text-title-heading">Стоимость, ₽:</legend>
             <input type="text" placeholder="0" />
             <input type="text" placeholder="9000" />
           </fieldset>
-          <button type="submit">Применить</button>
-          <button type="reset">Сбросить</button>
+
+          <!-- Кнопки фильтра -->
+
+          <div class="buttons-container">
+            <button type="submit">Применить</button>
+            <button type="reset">Сбросить</button>
+          </div>
         </form>
       </section>
+
       <!--Найденные результаты(информация об отелях)-->
+
       <section class="catalog-prewiev" data-test="catalog">
-        <h2>Найдено гостиниц:</h2>
-        <select class="dropdown">
-          <option>Сначала дешевые</option>
-        </select>
-        <!--Каким образом представлять инфу? Списком, таблицей ?-->
-        <div class="performance">
+        <div class="sorting">
+          <h2>Найдено гостиниц:</h2>
+
+          <select class="dropdown">
+            <option>Сначала дешевые</option>
+          </select>
+
+          <!--Каким образом представлять инфу? Списком, таблицей ?-->
+
           <ul class="performance-list">
             <li class="performance-item">Таблица</li>
             <li class="performance-item">Список с картинками</li>
             <li class="performance-item">Список</li>
           </ul>
         </div>
+
         <div class="container-hotels">
           <ul class="container-hotels-list">
             <li class="container-hotels-item">
@@ -137,16 +163,36 @@
               <button type="submit-button">В избранное</button>
               <ul class="stars">
                 <li class="stars-item">
-                  <img src="img/Vector-star.png" weight="18" height="17" alt="звезда" />
+                  <img
+                    src="img/Vector-star.png"
+                    weight="18"
+                    height="17"
+                    alt="звезда"
+                  />
                 </li>
                 <li class="stars-item">
-                  <img src="img/Vector-star.png" weight="18" height="17" alt="звезда" />
+                  <img
+                    src="img/Vector-star.png"
+                    weight="18"
+                    height="17"
+                    alt="звезда"
+                  />
                 </li>
                 <li class="stars-item">
-                  <img src="img/Vector-star.png" weight="18" height="17" alt="звезда" />
+                  <img
+                    src="img/Vector-star.png"
+                    weight="18"
+                    height="17"
+                    alt="звезда"
+                  />
                 </li>
                 <li class="stars-item">
-                  <img src="img/Vector-star.png" weight="18" height="17" alt="звезда" />
+                  <img
+                    src="img/Vector-star.png"
+                    weight="18"
+                    height="17"
+                    alt="звезда"
+                  />
                 </li>
               </ul>
               <p class="hotels-rating">Рейтинг: 8,5</p>
@@ -160,16 +206,36 @@
               <button type="submit-button">В избранное</button>
               <ul class="stars">
                 <li class="stars-item">
-                  <img src="img/Vector-star.png" weight="18" height="17" alt="звезда" />
+                  <img
+                    src="img/Vector-star.png"
+                    weight="18"
+                    height="17"
+                    alt="звезда"
+                  />
                 </li>
                 <li class="stars-item">
-                  <img src="img/Vector-star.png" weight="18" height="17" alt="звезда" />
+                  <img
+                    src="img/Vector-star.png"
+                    weight="18"
+                    height="17"
+                    alt="звезда"
+                  />
                 </li>
                 <li class="stars-item">
-                  <img src="img/Vector-star.png" weight="18" height="17" alt="звезда" />
+                  <img
+                    src="img/Vector-star.png"
+                    weight="18"
+                    height="17"
+                    alt="звезда"
+                  />
                 </li>
                 <li class="stars-item">
-                  <img src="img/Vector-star.png" weight="18" height="17" alt="звезда" />
+                  <img
+                    src="img/Vector-star.png"
+                    weight="18"
+                    height="17"
+                    alt="звезда"
+                  />
                 </li>
               </ul>
               <p class="hotels-rating">Рейтинг: 9,2</p>
@@ -183,19 +249,37 @@
               <button type="submit-button">В избранное</button>
               <ul class="stars">
                 <li class="stars-item">
-                  <img src="img/Vector-star.png" weight="18" height="17" alt="звезда" />
+                  <img
+                    src="img/Vector-star.png"
+                    weight="18"
+                    height="17"
+                    alt="звезда"
+                  />
                 </li>
                 <li class="stars-item">
-                  <img src="img/Vector-star.png" weight="18" height="17" alt="звезда" />
+                  <img
+                    src="img/Vector-star.png"
+                    weight="18"
+                    height="17"
+                    alt="звезда"
+                  />
                 </li>
                 <li class="stars-item">
-                  <img src="img/Vector-star.png" weight="18" height="17" alt="звезда" />
+                  <img
+                    src="img/Vector-star.png"
+                    weight="18"
+                    height="17"
+                    alt="звезда"
+                  />
                 </li>
               </ul>
               <p class="hotels-rating">Рейтинг: 6,9</p>
             </li>
             <li class="container-hotels-item">
-              <img src="img/hotel-4.jpg" alt="Ночной пейзаж на скалы и звезды" />
+              <img
+                src="img/hotel-4.jpg"
+                alt="Ночной пейзаж на скалы и звезды"
+              />
               <h3>GreenTree Inn</h3>
               <p class="name-hotels">Гостиница</p>
               <p class="price-hotels">От 1500 ₽</p>
@@ -203,10 +287,20 @@
               <button type="submit-button">В избранное</button>
               <ul class="stars">
                 <li class="stars-item">
-                  <img src="img/Vector-star.png" weight="18" height="17" alt="звезда" />
+                  <img
+                    src="img/Vector-star.png"
+                    weight="18"
+                    height="17"
+                    alt="звезда"
+                  />
                 </li>
                 <li class="stars-item">
-                  <img src="img/Vector-star.png" weight="18" height="17" alt="звезда" />
+                  <img
+                    src="img/Vector-star.png"
+                    weight="18"
+                    height="17"
+                    alt="звезда"
+                  />
                 </li>
               </ul>
               <p class="hotels-rating">Рейтинг: 5,0</p>
@@ -229,13 +323,27 @@
         <div class="subscribe-content">
           <h2>Подпишитесь на рассылку</h2>
           <p>
-            Только полезная информация и никакого спама, честное бойскаутское
+            Только полезная информация и никакого спама,<br />
+            честное бойскаутское
           </p>
 
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="email-subscribe">Введите e-mail</label>
-            <input type="text" placeholder="Ваш e-mail" name="email-subscribe" id="email-subscribe" />
-            <button class="subscribe-button" type="submit">Подписаться</button>
+          <form
+            class="subscribe-form"
+            action="https://echo.htmlacademy.ru"
+            method="post"
+          >
+            <label class="visually-hidden" for="email-subscribe"
+              >Введите e-mail</label
+            >
+            <input
+              type="text"
+              placeholder="Ваш e-mail"
+              name="email-subscribe"
+              id="email-subscribe"
+            />
+            <button class="button blue subscribe-button" type="submit">
+              Подписаться
+            </button>
           </form>
         </div>
       </section>
@@ -244,19 +352,34 @@
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link" href="#">
-            <img src="img/svg/logotype-VK.svg" width="24px" height="14px" alt="Логотип сайта Вконтакте" />
+            <img
+              src="img/svg/logotype-VK.svg"
+              width="24px"
+              height="14px"
+              alt="Логотип сайта Вконтакте"
+            />
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="#">
-            <img src="img/svg/logotype_TG.svg" width="18px" height="15px" alt="Логотип Телеграмм" />
+            <img
+              src="img/svg/logotype_TG.svg"
+              width="18px"
+              height="15px"
+              alt="Логотип Телеграмм"
+            />
             <span class="visually-hidden">Телеграмм</span>
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="#">
-            <img src="img/svg/logotype-youtube.svg" width="22px" height="17px" alt="Логотип сайта Ютуб" />
+            <img
+              src="img/svg/logotype-youtube.svg"
+              width="22px"
+              height="17px"
+              alt="Логотип сайта Ютуб"
+            />
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
@@ -268,5 +391,4 @@
       </a>
     </footer>
   </body>
-
 </html>

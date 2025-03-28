@@ -1,0 +1,517 @@
+/* Подключение шрифта */
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: italic;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: italic;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+}
+
+/*Но это не точно*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  min-height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+a {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+/* Класс для растяжения основного контента. Таким образом прижимаем footer вниз страницы на любом экране */
+.container-grow {
+  flex-grow: 1;
+}
+
+/* HEADER */
+
+.header-navigation {
+  padding: 0 70px;
+  display: flex;
+}
+
+.header-navigation-list {
+  display: flex;
+  align-items: center;
+  width: 339px;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.navigation-user {
+  width: 268px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+.header-logo {
+  width: 140px;
+  margin-right: 30px;
+}
+.header-logo img {
+  display: block;
+}
+
+.header-navigation-list .header-navigation-item {
+  list-style: none;
+  padding: 20px 16px;
+}
+
+.navigation-user .header-navigation-item:not(:last-child) {
+  padding: 24px 13px;
+}
+.navigation-user .header-navigation-item:last-child {
+  padding: 14px 0 14px 20px;
+}
+
+/* ВОПРОС! Почему нужна такая специфичность, чтобы выделить цвет белым?
+  С классом button-link цвет ссылки нельзя сделать белым */
+.navigation-user li:last-child a.button-header {
+  padding: 8px 34px;
+}
+
+/* MAIN */
+/* HERO */
+
+.hero-background {
+  background-image: url("../img/divider.png"),
+    url("../img/index-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  vertical-align: bottom;
+}
+
+.hero-image {
+  display: block;
+  padding: 51px 0 82px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  width: 651px;
+  margin: 0 auto;
+  padding: 69px 0;
+}
+
+.hero-content h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.hero-content p {
+  margin: 0;
+  color: rgba(51, 51, 51, 1);
+}
+
+/* ADVENTAGES */
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages-block-3 {
+  flex-direction: row-reverse;
+}
+
+.advantages-content {
+  min-height: 385px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-content-box {
+  width: 230px;
+  margin: auto;
+}
+
+.advantages-content-box h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.advantages-content-box h2:after {
+  content: "";
+  display: block;
+  width: 60px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #0000004d;
+}
+
+.advantages-block-1 .advantages-content-box h2:after,
+.advantages-block-3 .advantages-content-box h2:after {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.advantages-content-box p {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages-block-1 .advantages-content,
+.advantages-block-3 .advantages-content {
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 1);
+}
+.advantages-block-2 .advantages-content {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-block-2 .advantages-content:nth-child(2) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+/* ACTION */
+
+.action {
+  display: flex;
+  flex-direction: column;
+  width: 505px;
+  margin: 0 auto;
+  padding: 64px 0;
+  text-align: center;
+}
+
+.action h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.action p {
+  color: rgba(51, 51, 51, 1);
+  margin: 0;
+}
+
+/* POSSIBILITY */
+
+.possibility-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.possibility-list li:not(:nth-child(2)) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.possibility-item {
+  width: 400px;
+  min-height: 385px;
+  display: flex;
+}
+
+.possibility-content {
+  width: 230px;
+  margin: auto;
+  text-align: center;
+}
+
+.possibility-content img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.possibility-content h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.possibility-content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+  color: rgba(51, 51, 51, 1);
+}
+
+/* SEARCH */
+
+.search {
+  display: flex;
+  flex-direction: column;
+  width: 592px;
+  margin: 0 auto;
+  padding: 96px 0;
+  text-align: center;
+}
+
+.search h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.search p {
+  color: rgba(51, 51, 51, 1);
+}
+
+.button {
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.brown {
+  background-color: rgba(117, 97, 87, 1);
+}
+
+.blue {
+  background-color: rgba(130, 179, 211, 1);
+}
+
+.button-main {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+
+  padding-top: 8px;
+  padding-right: 50px;
+  padding-bottom: 8px;
+  padding-left: 50px;
+}
+
+/* SUBSCRIBE */
+
+.subscribe {
+  background-image: url("../img/subscription-background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.subscribe-content {
+  width: 684px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 96px 0 104px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.subscribe-content h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.subscribe-content p {
+  margin: 0;
+  margin-bottom: 54px;
+}
+
+/* FOOTER */
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 70px 30px;
+}
+
+.social-list {
+  width: 142px;
+  height: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-item {
+  place-content: center;
+  text-align: center;
+}
+
+.social-link {
+  margin: auto;
+}
+
+.contacts-phone {
+  width: 720px;
+
+  font-size: 40px;
+  line-height: 40px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* CATALOG.HTML */
+
+.filter {
+  color: rgba(255, 255, 255, 1);
+  background-image: url("../img/catalog-blur-filter.jpeg");
+}
+
+.filter-header {
+  width: 1060px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.title {
+  margin: 0;
+  padding-top: 35px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+.breadcrubs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.breadcrubs-item:first-child {
+  margin-right: 11px;
+}
+
+.filter-choise {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+
+.filter-choise > fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.filter-choise > fieldset > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+fieldset.checkbox-set {
+  margin-right: 70px;
+}
+
+fieldset.text-set {
+  margin-right: 70px;
+}
+
+fieldset.radio-set {
+  margin-right: auto;
+}
+
+div.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sorting {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.sorting h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  margin-right: 200px;
+  text-transform: uppercase;
+}
+
+.sorting .dropdown {
+  margin-right: 70px;
+}
+
+.performance-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

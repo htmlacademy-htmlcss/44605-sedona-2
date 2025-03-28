@@ -3,23 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="styles/styles.css"
+    <link rel="stylesheet" href="styles/style.css"
   </head>
 
   <body>
     <header class="header-content" data-test="header">
       <!-- Блок навигации по сайту -->
       <nav class="header-navigation">
-        <p class="logo">
-          <a href="#">
-            <img
-              src="img/svg/header-logo.svg"
-              width="140"
-              height="70"
-              alt="Логотип Sedona"
-            />
-          </a>
-        </p>
+        <a class="header-logo" href="#">
+          <img
+            src="img/svg/header-logo.svg"
+            width="140"
+            height="70"
+            alt="Логотип Sedona"
+          />
+        </a>
         <ul class="header-navigation-list">
           <li class="header-navigation-item">
             <a class="active-link" href="#">Главная</a>
@@ -45,17 +43,22 @@
             </a>
           </li>
           <li class="header-navigation-item">
-            <a class="button-link" href="#">Хочу сюда</a>
+            <a class="button button-header brown" href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-content" data-test="main">
+    <main class="main-content container-grow" data-test="main">
       <!-- Приветственный HERO-блок -->
+
       <section class="hero" data-test="hero">
-        <div class="background-container">
-          <h1 class="visually-hidden title">Sedona - город в Аризоне</h1>
-          <img src="img/svg/welcome-block.svg" alt="Приветствие" />
+        <h1 class="title visually-hidden">Sedona - город в Аризоне</h1>
+        <div class="hero-background">
+          <img
+            class="hero-image"
+            src="img/svg/welcome-block.svg"
+            alt="Приветствие"
+          />
         </div>
         <div class="hero-content">
           <h2>Седона - небольшой городок в Аризоне, заслуживающий большего</h2>
@@ -64,9 +67,10 @@
       </section>
 
       <!-- Преимущества -->
+
       <article class="advantages advantages-block-1">
         <div class="advantages-content">
-          <div>
+          <div class="advantages-content-box">
             <h2>Настоящий городок</h2>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
@@ -80,19 +84,19 @@
       </article>
       <article class="advantages advantages-block-2">
         <div class="advantages-content">
-          <div class="advantages-content-box-1">
+          <div class="advantages-content-box">
             <h2>Небольшая площадь</h2>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
         </div>
         <div class="advantages-content">
-          <div class="advantages-content-box-2">
+          <div class="advantages-content-box">
             <h2>Красивая дорога</h2>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </div>
         <div class="advantages-content">
-          <div class="advantages-content-box-3">
+          <div class="advantages-content-box">
             <h2>Мало туристов</h2>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </div>
@@ -100,7 +104,7 @@
       </article>
       <article class="advantages advantages-block-3">
         <div class="advantages-content">
-          <div>
+          <div class="advantages-content-box">
             <h2>Там есть мост дьявола</h2>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </div>
@@ -114,14 +118,14 @@
       </article>
 
       <!-- Действия -->
+
       <section class="action">
         <h2>Приезжайте в Седону отдохнуть в комфорте и уюте</h2>
-        <p class="action-content">
-          Опытный персонал и качественное обслуживание
-        </p>
+        <p>Опытный персонал и качественное обслуживание</p>
       </section>
 
       <!-- Возможности -->
+
       <section class="possibility">
         <ul class="possibility-list">
           <li class="possibility-item">
@@ -171,25 +175,28 @@
       </section>
 
       <!-- Поиск -->
+
       <section class="search" data-test="search">
         <div class="frame-search">
           <h2>Заинтересовались?</h2>
           <p class="search-content">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-            предложения гостиниц в Седоне
+            Укажите предполагаемые даты поездки,<br />
+            и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a class="search-link" href="catalog.html"
+          <a class="button button-main brown" href="catalog.html"
             >Поиск гостиницы в Седоне</a
           >
         </div>
       </section>
 
       <!-- Подписка -->
+
       <section class="subscribe" data-test="subscribe">
         <div class="subscribe-content">
           <h2>Подпишитесь на рассылку</h2>
           <p>
-            Только полезная информация и никакого спама, честное бойскаутское
+            Только полезная информация и никакого спама,<br />
+            честное бойскаутское
           </p>
 
           <form
@@ -206,7 +213,9 @@
               name="email-subscribe"
               id="email-subscribe"
             />
-            <button class="subscribe-button" type="submit">Подписаться</button>
+            <button class="button blue subscribe-button" type="submit">
+              Подписаться
+            </button>
           </form>
         </div>
       </section>
