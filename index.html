@@ -151,7 +151,7 @@
 
       <!-- Подписка -->
 
-      <section class="subscribe" data-test="subscribe">
+      <section class="subscribe subscribe-background" data-test="subscribe">
         <div class="subscribe-content">
           <h2>Подпишитесь на рассылку</h2>
           <p>
@@ -160,8 +160,10 @@
           </p>
 
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="email-subscribe">Введите e-mail</label>
-            <input type="text" placeholder="Ваш e-mail" name="email-subscribe" id="email-subscribe" />
+            <label class="subscribe-field">
+              <span class="visually-hidden">Ваш e-mail</span>
+              <input class="subscribe-field-input" type="email" name="email" placeholder="Ваш e-mail" required="">
+            </label>
             <button class="button blue subscribe-button" type="submit">
               Подписаться
             </button>

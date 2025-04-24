@@ -44,42 +44,51 @@
       </nav>
     </header>
     <main class="catalog-content container-grow" data-test="main">
+
       <!--Фильтрация отелей-->
 
       <section class="filter" data-test="filter">
         <header class="filter-header">
-          <h1 class="title">Гостиницы Седоны</h1>
-          <ul class="breadcrubs-list">
-            <li class="breadcrubs-item">
-              <a class="breadcrubs-link" href="index.html">
-                <img src="img/svg/Vector-breadcrumbs.svg" width="12" height="12" />
-                <span class="visually-hidden">Домой</span>
-              </a>
-            </li>
-            <li class="breadcrubs-item">
-              <a class="breadcrubs-link" href="#">
-                <span>Гостиницы</span>
-              </a>
-            </li>
-          </ul>
+          <h1 class="filter-header-title">Гостиницы Седоны</h1>
+          <nav class="filter-navigation">
+            <ul class="breadcrubs-list">
+              <li class="breadcrubs-item">
+                <a class="breadcrubs-link" href="index.html">
+                  <span class="visually-hidden">На главную</span>
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
+                      fill="white" />
+                    <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white" />
+                  </svg>
+                </a>
+              </li>
+              <li class="breadcrubs-item">
+                <a class="breadcrubs-link" href="catalog.html">
+                  <span>Гостиницы</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
         </header>
         <form class="filter-choise" method="get" action="https://echo.htmlacademy.ru">
           <!--Выбор инфраструктуры(checkbox)-->
 
           <fieldset class="checkbox-set">
-            <legend class="checkbox-title-heading">Инфраструктура:</legend>
+            <legend class="checkbox-title">Инфраструктура:</legend>
             <ul class="checkbox-list">
               <li class="checkbox-item">
                 <input type="checkbox" id="pool" name="pool" />
-                <label class="checkbox-title" for="pool">Бассейн</label>
+                <label class="checkbox-name" for="pool">Бассейн</label>
               </li>
               <li class="checkbox-item">
                 <input type="checkbox" id="parking" name="parking" />
-                <label class="checkbox-title" for="parking">Парковка</label>
+                <label class="checkbox-name" for="parking">Парковка</label>
               </li>
               <li class="checkbox-item">
                 <input type="checkbox" id="wi-fi" name="wi-fi" />
-                <label class="checkbox-title" for="wi-fi">Wi-Fi</label>
+                <label class="checkbox-name" for="wi-fi">Wi-Fi</label>
               </li>
             </ul>
           </fieldset>
@@ -87,19 +96,19 @@
           <!--Выбор типа жилья (radio)-->
 
           <fieldset class="radio-set">
-            <legend class="radio-title-heading">Тип жилья:</legend>
+            <legend class="radio-title">Тип Жилья:</legend>
             <ul class="radio-list">
               <li class="radio-item">
-                <input type="radio" id="hotel" name="hotel" />
-                <label class="radio" for="hotel">Гостиница</label>
+                <input type="radio" id="hotel" name="room" />
+                <label class="radio-name" for="hotel">Гостиница</label>
               </li>
               <li class="radio-item">
-                <input type="radio" id="motel" name="motel" />
-                <label class="radio-title" for="motel">Мотель</label>
+                <input type="radio" id="motel" name="room" />
+                <label class="radio-name" for="motel">Мотель</label>
               </li>
               <li class="radio-item">
-                <input type="radio" id="apartments" name="apartments" />
-                <label class="radio-title" for="apartments">Аппартаменты</label>
+                <input type="radio" id="apartments" name="room" />
+                <label class="radio-name" for="apartments">Аппартаменты</label>
               </li>
             </ul>
           </fieldset>
@@ -107,16 +116,27 @@
           <!--Параметры стоимости (text от и до)-->
 
           <fieldset class="text-set">
-            <legend class="text-title-heading">Стоимость, ₽:</legend>
-            <input type="text" placeholder="0" />
-            <input type="text" placeholder="9000" />
+            <legend class="text-title">Стоимость, ₽:</legend>
+            <div class="text-set-value">
+              <label class="value-from-title">
+                <input class="value-from" type="text" placeholder="0" />
+                <span class="value-from-hidden-text"></span>
+              </label>
+              <label class="value-before-title">
+                <input class="value-before" type="text" placeholder="9000" />
+                <span class="value-before-hidden-text"></span>
+              </label>
+            </div>
+            <div class="text-set-scale">
+              <input type="range">
+            </div>
           </fieldset>
 
           <!-- Кнопки фильтра -->
 
           <div class="buttons-container">
-            <button type="submit">Применить</button>
-            <button type="reset">Сбросить</button>
+            <button class="button-apply blue button" type="submit">Применить</button>
+            <button class="button-reset" type="reset">Сбросить</button>
           </div>
         </form>
       </section>
@@ -285,8 +305,10 @@
           </p>
 
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="email-subscribe">Введите e-mail</label>
-            <input type="text" placeholder="Ваш e-mail" name="email-subscribe" id="email-subscribe" />
+            <label class="subscribe-field">
+              <span class="visually-hidden">Ваш e-mail</span>
+              <input class="subscribe-field-input" type="email" name="email" placeholder="Ваш e-mail" required="" />
+            </label>
             <button class="button blue subscribe-button" type="submit">
               Подписаться
             </button>
