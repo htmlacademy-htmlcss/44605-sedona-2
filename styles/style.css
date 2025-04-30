@@ -565,6 +565,28 @@ a {
   text-transform: uppercase;
 }
 
+.contacts-phone:hover {
+  color: rgba(117, 97, 87, 1);
+}
+.contacts-phone:focus {
+  color: rgba(117, 97, 87, 1);
+}
+.contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+.developer-logotype-icon {
+  fill: rgba(0, 0, 0, 1);
+}
+.developer-logotype-icon:hover {
+  fill: rgba(117, 97, 87, 1);
+}
+.developer-logotype-icon:focus {
+  fill: rgba(117, 97, 87, 1);
+}
+.developer-logotype-icon:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
 /* CATALOG.HTML */
 /* Фильтрация отелей */
 
