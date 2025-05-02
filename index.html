@@ -266,7 +266,7 @@
           </button>
         </header>
 
-        <form class="booking-form">
+        <form class="booking-form" method="post">
           <div class="check-in">
             <label class="booking-label" for="booking-input">Дата Заезда:</label>
             <input class="booking-input" id="booking-input" type="text" name="booking-input" value="27 апреля 2020"
@@ -358,7 +358,8 @@
                     <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                   </svg>
                 </button>
-                <input class="booking-input-guest" id="booking-input" name="booking-input" type="text" placeholder="2">
+                <input class="booking-input-guest" id="booking-input" name="booking-input" type="number"
+                  placeholder="2">
                 <button class="button-guest-plus">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
@@ -375,7 +376,8 @@
                     <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                   </svg>
                 </button>
-                <input class="booking-input-guest" id="booking-input" name="booking-input" type="text" placeholder="2">
+                <input class="booking-input-guest" id="booking-input" name="booking-input" type="number"
+                  placeholder="2">
                 <button class="button-guest-plus">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
@@ -384,7 +386,7 @@
               </div>
             </div>
           </div>
-          <button class="booking-form-search blue button">Найти</button>
+          <button class="booking-form-search blue button" type="submit">Найти</button>
         </form>
       </div>
     </section>
