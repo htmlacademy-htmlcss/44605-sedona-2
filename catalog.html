@@ -28,7 +28,7 @@
           <li class="header-navigation-item">
             <a class="search-header" href="#">
               <span class="visually-hidden">Поиск</span>
-              <img src="images/svg/search.svg" />
+              <img src="images/svg/Vector-search.svg" />
             </a>
           </li>
           <li class="header-navigation-item">
@@ -78,16 +78,25 @@
             <legend class="checkbox-title">Инфраструктура:</legend>
             <ul class="checkbox-list">
               <li class="checkbox-item">
-                <input type="checkbox" id="pool" name="pool" />
-                <label class="checkbox-name" for="pool">Бассейн</label>
+                <label class="label-name">
+                  <input class="visually-hidden checkbox-input" type="checkbox" name="pool" checked />
+                  <span class="checkbox-mark"></span>
+                  <span class="checbox-label">Бассейн</span>
+                </label>
               </li>
               <li class="checkbox-item">
-                <input type="checkbox" id="parking" name="parking" />
-                <label class="checkbox-name" for="parking">Парковка</label>
+                <label class="label-name">
+                  <input class="visually-hidden checkbox-input" type="checkbox" name="parking" />
+                  <span class="checkbox-mark"></span>
+                  <span class="checbox-label">Парковка</span>
+                </label>
               </li>
               <li class="checkbox-item">
-                <input type="checkbox" id="wi-fi" name="wi-fi" />
-                <label class="checkbox-name" for="wi-fi">Wi-Fi</label>
+                <label class="label-name">
+                  <input class="visually-hidden checkbox-input" type="checkbox" name="wi-fi" />
+                  <span class="checkbox-mark"></span>
+                  <span class="checbox-label">Wi-Fi</span>
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -97,16 +106,25 @@
             <legend class="radio-title">Тип Жилья:</legend>
             <ul class="radio-list">
               <li class="radio-item">
-                <input type="radio" id="hotel" name="room" />
-                <label class="radio-name" for="hotel">Гостиница</label>
+                <label class="label-name"">
+                  <input class=" visually-hidden radio-input" type="radio" name="room" />
+                <span class="radio-mark"></span>
+                <span class="radio-label">Гостиница</span>
+                </label>
               </li>
               <li class="radio-item">
-                <input type="radio" id="motel" name="room" />
-                <label class="radio-name" for="motel">Мотель</label>
+                <label class="label-name">
+                  <input class="visually-hidden radio-input" type="radio" name="room" />
+                  <span class="radio-mark"></span>
+                  <span class="radio-label">Мотель</span>
+                </label>
               </li>
               <li class="radio-item">
-                <input type="radio" id="apartments" name="room" />
-                <label class="radio-name" for="apartments">Аппартаменты</label>
+                <label class="label-name">
+                  <input class="visually-hidden radio-input" type="radio" name="room" />
+                  <span class="radio-mark"></span>
+                  <span class="radio-label">Аппартаменты</span>
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -146,20 +164,46 @@
       <!--Найденные результаты(информация об отелях)-->
       <section class="catalog-prewiev" data-test="catalog">
         <div class="sorting">
-          <h2>Найдено гостиниц:</h2>
+          <h2>Найдено гостиниц: 38</h2>
 
           <select class="dropdown">
             <option>Сначала дешевые</option>
           </select>
 
-          <!--Каким образом представлять инфу? Списком, таблицей ?-->
 
+          <!--Каким образом представлять инфу? Списком, таблицей ?-->
           <ul class="performance-list">
-            <li class="performance-item visually-hidden">Таблица</li>
-            <li class="performance-item visually-hidden">
-              Список с картинками
+            <li class="performance-item perforance-item-current">
+              <svg class="perforance-icon" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 0H0V6H4V0Z" />
+                <path d="M16 0H12V6H16V0Z" />
+                <path d="M10 0H6V6H10V0Z" />
+                <path d="M4 8H0V14H4V8Z" />
+                <path d="M16 8H12V14H16V8Z" />
+                <path d="M10 8H6V14H10V8Z" />
+              </svg>
             </li>
-            <li class="performance-item visually-hidden">Список</li>
+            <li class="performance-item ">
+              <svg class="perforance-icon" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 12H0V14H16V12Z" />
+                <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" />
+              </svg>
+            </li>
+            <li class="performance-item ">
+              <svg class="perforance-icon" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 0H0V2H2V0Z" />
+                <path d="M16 0H4V2H16V0Z" />
+                <path d="M2 4H0V6H2V4Z" />
+                <path d="M16 4H4V6H16V4Z" />
+                <path d="M2 8H0V10H2V8Z" />
+                <path d="M16 8H4V10H16V8Z" />
+                <path d="M2 12H0V14H2V12Z" />
+                <path d="M16 12H4V14H16V12Z" />
+              </svg>
+            </li>
           </ul>
         </div>
 

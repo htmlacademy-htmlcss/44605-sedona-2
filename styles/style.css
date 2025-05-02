@@ -653,7 +653,6 @@ a {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-  letter-spacing: 0%;
 }
 
 .filter-choise > fieldset > ul {
@@ -674,6 +673,62 @@ fieldset.checkbox-set {
   margin-right: 70px;
 }
 
+.label-name {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  cursor: pointer;
+}
+
+.checkbox-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 1);
+  width: 20px;
+  height: 20px;
+}
+.label-name:hover {
+  opacity: 0.7;
+}
+.label-name:active {
+  opacity: 0.5;
+}
+/*
+Как сделать браузерный фокус на этом элемменте ?
+.label-name:focus {
+}
+*/
+.radio-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 1);
+  width: 20px;
+  height: 20px;
+}
+.checkbox-input[type="checkbox"]:checked + .checkbox-mark::before {
+  background-image: url("../images/svg/Vector-check-mark.svg");
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  left: 4px;
+}
+.radio-input[type="radio"]:checked + .radio-mark::before {
+  background-image: url("../images/svg/Vector-check-point.svg");
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+}
 fieldset.radio-set {
   margin-right: auto;
 }
@@ -686,11 +741,6 @@ fieldset.radio-set {
 .checkbox-item:last-child,
 .radio-item:last-child {
   margin-bottom: 0;
-}
-
-.checkbox-item input,
-.radio-item input {
-  margin-right: 16px;
 }
 
 .text-set {
@@ -837,6 +887,7 @@ input.value-before {
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 40px;
+  align-items: center;
 }
 
 .sorting h2 {
@@ -852,13 +903,47 @@ input.value-before {
 .dropdown {
   margin-right: 70px;
   margin-left: auto;
+  width: 292px;
+  border: 2px solid rgba(229, 229, 229, 1);
+  border-radius: 4px;
+  padding: 14px 20px;
+  -webkit-appearance: none; /* Для Chrome и Safari */
+  -moz-appearance: none; /* Для Firefox */
+  appearance: none; /* Для всех современных браузеров */
+  background-color: white;
+  font-size: 18px;
+  line-height: 21px;
+  background-image: url("../images/svg/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: center right 18px;
 }
 
 .performance-list {
   display: flex;
+  width: 160px;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.performance-item {
+  border: 2px solid rgba(229, 229, 229, 1);
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+.perforance-item-current {
+  border-color: rgba(0, 0, 0, 1);
+}
+
+.perforance-icon {
+  fill: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .container-hotels {
