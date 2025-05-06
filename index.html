@@ -256,7 +256,6 @@
         <span class="visually-hidden">htmlacademy</span>
       </a>
     </footer>
-
     <section class="modal-window">
       <div class="modal-content">
         <header class="modal-header">
@@ -370,14 +369,20 @@
             </div>
             <div class="guests-wrap">
               <label class="booking-label children" for="booking-input">Дети:</label>
+              <div class="tooltip">
+                <button class="tooltip-toggle">i</button>
+                <p class="tooltip-content">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                  размещаются бесплатно.
+                </p>
+              </div>
               <div class="guest-count">
                 <button class="button-guest-minus">
                   <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                   </svg>
                 </button>
-                <input class="booking-input-guest" id="booking-input" name="booking-input" type="number"
-                  placeholder="2">
+                <input class="booking-input-guest" id="booking-input" name="booking-input" type="number" value="2">
                 <button class="button-guest-plus">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />

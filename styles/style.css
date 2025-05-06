@@ -39,6 +39,18 @@
   overflow: hidden;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
 html {
   height: 100%;
 }
@@ -1220,6 +1232,58 @@ input.value-before {
   position: relative;
 }
 
+.tooltip {
+  position: absolute;
+  top: 52px;
+  right: 42px;
+  width: 256px;
+  min-height: 110px;
+}
+
+.tooltip-content {
+  margin: 0;
+  background-color: rgba(51, 51, 51, 1);
+  color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  padding: 15px 18px 18px 22px;
+  font-size: 16px;
+  line-height: 20px;
+  display: none;
+}
+
+.tooltip-content::before {
+  content: "";
+
+  width: 19px;
+  height: 19px;
+
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+
+  background-color: rgba(51, 51, 51, 1);
+}
+
+.tooltip-toggle {
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(131, 179, 211, 1);
+  color: rgba(255, 255, 255, 1);
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  position: absolute;
+  top: -41px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-toggle:focus + .tooltip-content,
+.tooltip-toggle:hover + .tooltip-content {
+  display: block;
+}
+
 .booking-input-guest {
   border: none;
   background-color: rgba(242, 242, 242, 1);
@@ -1227,8 +1291,8 @@ input.value-before {
   width: 110px;
   height: 48px;
   box-sizing: border-box;
-  padding: 14px 50px;
-
+  padding: 14px;
+  text-align: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -1239,40 +1303,51 @@ input.value-before {
 }
 
 .guest-count {
+  display: flex;
+  align-items: center;
   position: relative;
 }
 
 .button-guest-minus {
   display: flex;
+  align-items: center;
+  justify-content: center;
+
   position: absolute;
-  top: 22px;
-  left: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+
   border: none;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  padding: 0;
+  background-color: transparent;
+  font-family: inherit;
   cursor: pointer;
 }
 
 .button-guest-plus {
   display: flex;
+  align-items: center;
+  justify-content: center;
+
   position: absolute;
-  top: 16px;
-  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+
   border: none;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  padding: 0;
+  background-color: transparent;
+  font-family: inherit;
   cursor: pointer;
 }
 
-.children::after {
-  content: "i";
-  text-transform: lowercase;
-  text-align: center;
-  vertical-align: center;
-  position: absolute;
-  border-radius: 50%;
-  margin-left: 10px;
-  color: rgba(255, 255, 255, 1);
-  width: 26px;
-  height: 26px;
-  background-color: rgba(131, 179, 211, 1);
-}
 .booking-form-search {
   margin-top: 48px;
   height: 60px;
