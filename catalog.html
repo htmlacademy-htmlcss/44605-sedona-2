@@ -10,8 +10,8 @@
     <header class="header-content" data-test="header">
       <!-- Блок навигации по сайту -->
       <nav class="header-navigation">
-        <a class="header-logo" href="index.html">
-          <img src="images/svg/header-logo.svg" width="140" height="70" alt="Логотип Sedona" />
+        <a class="header-logo" href="#">
+          <img class="header-image" src="images/svg/header-logo.svg" width="140" height="70" alt="Логотип Sedona" />
         </a>
         <ul class="header-navigation-list">
           <li class="header-navigation-item">
@@ -21,28 +21,28 @@
             <a class="header-navigation-link" href="#">О Седоне</a>
           </li>
           <li class="header-navigation-item">
-            <a class="header-navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="header-navigation-link navigation-link-current" href="#">Гостиницы</a>
           </li>
         </ul>
         <ul class="header-navigation-list navigation-user">
-          <li class="header-navigation-item">
-            <a class="search-header" href="#">
+          <li class="navigation-user-item">
+            <a class="navigation-user-search-link" href="#">
               <span class="visually-hidden">Поиск</span>
-              <img src="images/svg/Vector-search.svg" />
             </a>
           </li>
-          <li class="header-navigation-item">
-            <a class="favourites" href="#">
+          <li class="navigation-user-item">
+            <a class="navigation-user-favourites-link" href="#">
               <span class="visually-hidden">Избранное</span>
-              <img src="images/svg/Vector-like.svg" />
+              <span class="favourites-count">12</span>
             </a>
           </li>
-          <li class="header-navigation-item">
-            <a class="button button-header brown" href="#">Хочу сюда</a>
+          <li class="navigation-user-item">
+            <a class="button button-header brown" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
+
     <main class="catalog-content container-grow" data-test="main">
 
       <!--Фильтрация отелей-->
@@ -353,8 +353,8 @@
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="subscribe-field">
               <span class="visually-hidden">Ваш e-mail</span>
-              <input class="subscribe-field-input catalog-subscribe-field-input" type="email" name="email"
-                placeholder="Ваш e-mail" required="" />
+              <input class="subscribe-input catalog-subscribe-input" type="email" name="email" placeholder="Ваш e-mail"
+                required="" />
             </label>
             <button class="button blue subscribe-button" type="submit">
               Подписаться
