@@ -335,15 +335,18 @@ a {
   text-align: center;
 }
 
-/* MAIN */
+/* Основной контект страницы */
 /* HERO */
+
+.hero {
+  margin-bottom: 21px;
+}
 
 .hero-background {
   background-image: url("../images/svg/Vector-divider.svg"),
     url("../images/jpg/index-background.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
-  vertical-align: bottom;
+  background-position: bottom;
 }
 
 .hero-image {
@@ -359,7 +362,7 @@ a {
   padding: 69px 0;
 }
 
-.hero-content h2 {
+.hero-content > h2 {
   margin: 0;
   margin-bottom: 25px;
 }
@@ -370,16 +373,9 @@ a {
   color: rgba(51, 51, 51, 1);
 }
 
-.hero {
-  margin-bottom: 21px;
-}
-
-/* ADVENTAGES */
+/* ADVENTAGES преимущества */
 
 .advantages-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -402,7 +398,10 @@ a {
 .advantages-content-box > h3 {
   width: 175px;
   margin: 0 auto;
-  text-align: center;
+}
+
+.advantages-content-box > p {
+  margin: 0;
 }
 
 .advantages-item:first-child,
@@ -425,7 +424,7 @@ a {
   background-color: (131, 179, 211, 0.2);
 }
 
-.advantages-content-box h3:after {
+.advantages-content-box .title-h3::after {
   content: "";
   display: block;
   width: 60px;
@@ -435,15 +434,12 @@ a {
   border-bottom: 2px solid #0000004d;
 }
 
-.advantages-item:first-child .advantages-content-box h3:after,
-.advantages-item:last-child .advantages-content-box h3:after {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+.advantages-item:first-child .advantages-content-box .title-h3:after,
+.advantages-item:last-child .advantages-content-box .title-h3:after {
+  border-color: inherit;
+  opacity: 0.3;
 }
-
-.advantages-content-box > p {
-  margin: 0;
-}
-
+/* тут остановился 6 мая в 15:00 */
 /* ACTION */
 
 .action {
