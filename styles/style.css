@@ -357,7 +357,7 @@ a {
 
 .hero-content {
   display: block;
-  width: 651px;
+  width: 660px;
   margin: 0 auto;
   padding: 69px 0;
 }
@@ -557,6 +557,7 @@ a {
   border-radius: 4px 0 0 4px;
   font-size: 18px;
   line-height: 24px;
+  font-family: inherit;
 }
 
 .catalog-subscribe-input {
@@ -595,7 +596,6 @@ a {
 }
 
 .contacts-phone {
-  width: 331px;
   padding: 5px 0;
   font-size: 40px;
   line-height: 40px;
@@ -899,6 +899,22 @@ a {
   color: rgba(255, 255, 255, 1);
 }
 
+.breadcrubs-link .breadcrumbs-icon-home:hover {
+  opacity: 0.6;
+}
+
+.breadcrubs-link .breadcrumbs-icon-home:active {
+  opacity: 0.3;
+}
+
+.breadcrubs-link span:hover {
+  opacity: 0.6;
+}
+
+.breadcrubs-link span:active {
+  opacity: 0.3;
+}
+
 .breadcrubs-item + .breadcrubs-item {
   display: flex;
 }
@@ -1185,12 +1201,18 @@ input.value-before {
   -webkit-appearance: none; /* Для Chrome и Safari */
   -moz-appearance: none; /* Для Firefox */
   appearance: none; /* Для всех современных браузеров */
-  background-color: white;
+  background-color: transparent;
   font-size: 18px;
   line-height: 21px;
   background-image: url("../images/svg/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: center right 18px;
+}
+
+.dropdown:hover,
+.dropdown:focus {
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 .performance-list {
@@ -1208,6 +1230,12 @@ input.value-before {
   width: 48px;
   height: 48px;
   position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.performance-item:hover {
+  opacity: 0.6;
 }
 .perforance-item-current {
   border-color: rgba(0, 0, 0, 1);
