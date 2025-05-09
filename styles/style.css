@@ -348,6 +348,7 @@ a {
 }
 
 .hero-background {
+  background-color: rgba(130, 179, 211, 1);
   background-image: url("../images/svg/Vector-divider.svg"),
     url("../images/jpg/index-background.jpg");
   background-repeat: no-repeat;
@@ -525,6 +526,7 @@ a {
 /* SUBSCRIBE */
 
 .subscribe-background {
+  background-color: rgba(63, 94, 114, 1);
   background-image: url("../images/jpg/subscription-background.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -872,6 +874,7 @@ a {
 
 .filter {
   color: rgba(255, 255, 255, 1);
+  background-color: rgba(63, 94, 114, 1);
   background-image: url("../images/jpg/catalog-blur-filter.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
