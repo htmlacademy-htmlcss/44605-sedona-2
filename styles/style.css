@@ -128,6 +128,11 @@ body {
   line-height: 20px;
 }
 
+.button:disabled {
+  background-color: rgba(229, 229, 229, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
 .button-header {
   padding: 8px 34px;
 }
@@ -144,7 +149,7 @@ body {
 }
 
 .button-apply {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .button-reset {
@@ -386,17 +391,17 @@ a {
   display: flex;
 }
 
-.advantages-item img {
+.advantages-images-item img {
   display: block;
 }
 
 .advantages-content-box {
-  width: 230px;
+  width: 232px;
   margin: auto;
 }
 
 .advantages-content-box > h3 {
-  width: 175px;
+  width: 172px;
   margin: 0 auto;
 }
 
@@ -869,6 +874,7 @@ a {
   color: rgba(255, 255, 255, 1);
   background-image: url("../images/jpg/catalog-blur-filter.jpeg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .filter-header {
@@ -986,11 +992,7 @@ fieldset.checkbox-set {
 .label-name:active {
   opacity: 0.5;
 }
-/*
-Как сделать браузерный фокус на этом элемменте ?
-.label-name:focus {
-}
-*/
+
 .radio-mark {
   position: absolute;
   top: 0;
@@ -1022,6 +1024,11 @@ fieldset.checkbox-set {
 }
 fieldset.radio-set {
   margin-right: auto;
+}
+
+.checkbox-list,
+.radio-list {
+  width: 150px;
 }
 
 .checkbox-item,
@@ -1122,8 +1129,8 @@ input.value-before {
 .buttons-container {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-top: auto;
+  margin-left: 70px;
+  margin-top: 56px;
 }
 .slider-container {
   width: 287px;
@@ -1133,7 +1140,7 @@ input.value-before {
 .slider {
   width: 287px;
   height: 4px;
-  margin: 10px auto;
+  margin: 8px auto;
   background-color: gray;
   position: relative;
 }
@@ -1142,7 +1149,7 @@ input.value-before {
   position: absolute;
   width: 20px;
   height: 20px;
-  top: -10px;
+  top: -8px;
   left: 0;
   border-radius: 5px;
   background-color: #ffffff;
@@ -1154,7 +1161,7 @@ input.value-before {
   position: absolute;
   width: 20px;
   height: 20px;
-  top: -10px;
+  top: -8px;
   right: 61px;
   border-radius: 5px;
   background-color: #ffffff;
@@ -1176,7 +1183,7 @@ input.value-before {
   display: flex;
   width: 1060px;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 48px;
   padding-bottom: 40px;
   align-items: center;
 }
@@ -1192,6 +1199,7 @@ input.value-before {
 }
 
 .dropdown {
+  font-family: inherit;
   margin-right: 70px;
   margin-left: auto;
   width: 292px;
@@ -1211,8 +1219,13 @@ input.value-before {
 
 .dropdown:hover,
 .dropdown:focus {
-  opacity: 0.6;
   cursor: pointer;
+  border-color: rgba(104, 162, 202, 1);
+}
+
+.dropdown:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 .performance-list {
@@ -1329,8 +1342,7 @@ input.value-before {
   list-style-type: none;
   width: 140px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 6px;
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .stars-item {

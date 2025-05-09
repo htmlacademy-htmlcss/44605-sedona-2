@@ -4,7 +4,10 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="styles/style.css" </head>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+  </head>
 
   <body>
     <header class="header-content" data-test="header">
@@ -52,7 +55,8 @@
         </div>
         <div class="hero-content">
           <h2 class="title-h2">
-            Седона - небольшой городок в Аризоне, заслуживающий большего
+            Седона — небольшой городок в Аризоне,
+            заслуживающий большего!
           </h2>
           <p class="description-title-h2">
             Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
@@ -70,7 +74,9 @@
             </p>
           </div>
         </li>
-        <img src="images/jpg/photo-1.jpg" width="800" height="385" alt="Локация в городе" />
+        <li class="advantages-images-item">
+          <img src="images/jpg/photo-1.jpg" width="800" height="385" alt="Локация в городе" />
+        </li>
         <li class="advantages-item">
           <div class="advantages-content-box">
             <h3 class="title-h3">Небольшая площадь</h3>
@@ -95,7 +101,9 @@
             </p>
           </div>
         </li>
-        <img src="images/jpg/photo-2.jpg" width="800" height="385" alt="Каменистые скалы" />
+        <li class="advantages-images-item">
+          <img src="images/jpg/photo-2.jpg" width="800" height="385" alt="Каменистые скалы" />
+        </li>
         <li class="advantages-item">
           <div class="advantages-content-box">
             <h3 class="title-h3">Там есть мост дьявола</h3>
@@ -124,7 +132,9 @@
               <img src="images/svg/Vector-home.svg" width="75" height="72" alt="Домик" />
               <h3 class="title-h3">Жилье</h3>
               <p class="description-title-h3">
-                Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                Рекомендуем пожить<br>
+                в настоящем мотеле,<br>
+                всё как в кино!
               </p>
             </div>
           </li>
@@ -134,7 +144,9 @@
               <img src="images/svg/burger.svg" width="74" height="70" alt="Бургер" />
               <h3 class="title-h3">Еда</h3>
               <p class="description-title-h3">
-                Всегда заказывайте топовый фирменный бургер, вы не
+                Всегда заказывайте<br>
+                топовый фирменный бургер,<br>
+                вы не
                 разочаруетесь!
               </p>
             </div>
@@ -145,7 +157,8 @@
               <img src="images/svg/Vector-present.svg" width="64" height="76" alt="Презент" />
               <h3 class="title-h3">Сувениры</h3>
               <p class="description-title-h3">
-                Не только китайского, но и настоящего местного производства!
+                Не только китайского,<br>
+                но и настоящего местного производства!
               </p>
             </div>
           </li>
@@ -261,9 +274,9 @@
 
         <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="check-in">
-            <label class="booking-label" for="booking-input">Дата Заезда:</label>
-            <input class="booking-input" id="booking-input" type="text" name="booking-input" value="27 апреля 2020"
-              placeholder="Укажите дату" required />
+            <label class="booking-label" for="booking-input-check-in">Дата Заезда:</label>
+            <input class="booking-input" id="booking-input-check-in" type="text" name="booking-input"
+              value="27 апреля 2020" placeholder="Укажите дату" required />
             <button class="modal-button-calendar" type="submit">
               <svg class="booking-form-icon" width="16" height="15" viewBox="0 0 16 15" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -302,9 +315,9 @@
             <p class="modal-text message-error">Мы не можем отправить вас в прошлое.</p>
           </div>
           <div class="check-out">
-            <label class="booking-label" for="booking-input">Дата выезда:</label>
-            <input class="booking-input" id="booking-input" type="text" name="booking-input" value="1 сентября 2023"
-              placeholder="Укажите дату" required />
+            <label class="booking-label" for="booking-input-check-out">Дата выезда:</label>
+            <input class="booking-input" id="booking-input-check-out" type="text" name="booking-input"
+              value="1 сентября 2023" placeholder="Укажите дату" required />
             <button class="modal-button-calendar" type="submit">
               <svg class="booking-form-icon" width="16" height="15" viewBox="0 0 16 15" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -344,14 +357,15 @@
           </div>
           <div class="guests">
             <div class="guests-wrap">
-              <label class="booking-label" for="booking-input">Взрослые:</label>
+              <label class="booking-label" for="booking-input-adults">Взрослые:</label>
               <div class="guest-count">
                 <button class="button-guest-minus">
                   <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                   </svg>
                 </button>
-                <input class="booking-input-guest" id="booking-input" name="booking-input" type="number" value="2">
+                <input class="booking-input-guest" id="booking-input-adults" name="booking-input" type="number"
+                  value="2">
                 <button class="button-guest-plus">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
@@ -361,7 +375,7 @@
 
             </div>
             <div class="guests-wrap">
-              <label class="booking-label children" for="booking-input">Дети:</label>
+              <label class="booking-label children" for="booking-input-children">Дети:</label>
               <div class="tooltip">
                 <button class="tooltip-toggle">i</button>
                 <p class="tooltip-content">
@@ -375,7 +389,8 @@
                     <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                   </svg>
                 </button>
-                <input class="booking-input-guest" id="booking-input" name="booking-input" type="number" value="2">
+                <input class="booking-input-guest" id="booking-input-children" name="booking-input" type="number"
+                  value="2">
                 <button class="button-guest-plus">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
