@@ -256,8 +256,7 @@ a {
 /* Навигация по разделам сайта */
 .header-navigation-list {
   display: flex;
-  align-items: center;
-  width: 339px;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   font-size: 20px;
@@ -285,7 +284,7 @@ a {
 
 /* Пользовательская навигация */
 .navigation-user {
-  width: 268px;
+  min-width: 268px;
   text-transform: uppercase;
   margin-left: auto;
   justify-content: flex-end;
@@ -384,6 +383,7 @@ a {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .advantages-item {
@@ -427,7 +427,7 @@ a {
 }
 
 .advantages-item:nth-child(4) {
-  background-color: (131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-content-box .title-h3::after {
@@ -469,6 +469,7 @@ a {
 /* POSSIBILITY */
 .possibility-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .possibility-list li:not(:nth-child(2)) {
@@ -1197,7 +1198,7 @@ input.value-before {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  margin-right: 200px;
+  margin-right: auto;
   text-transform: uppercase;
 }
 
@@ -1296,6 +1297,7 @@ input.value-before {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  /* justify-content: space-between; */
 }
 
 .container-hotels-item > img {
