@@ -180,35 +180,44 @@
           <!--Каким образом представлять инфу? Списком, таблицей ?-->
           <ul class="performance-list">
             <li class="performance-item perforance-item-current" tabindex="0">
-              <svg class="perforance-icon" width="16" height="14" viewBox="0 0 16 14" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 0H0V6H4V0Z" />
-                <path d="M16 0H12V6H16V0Z" />
-                <path d="M10 0H6V6H10V0Z" />
-                <path d="M4 8H0V14H4V8Z" />
-                <path d="M16 8H12V14H16V8Z" />
-                <path d="M10 8H6V14H10V8Z" />
-              </svg>
+              <a class="toggle-view" href="catalog.html?view=tile">
+                <span class="visually-hidden">Показать плиткой</span>
+                <svg class="perforance-icon" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 0H0V6H4V0Z" />
+                  <path d="M16 0H12V6H16V0Z" />
+                  <path d="M10 0H6V6H10V0Z" />
+                  <path d="M4 8H0V14H4V8Z" />
+                  <path d="M16 8H12V14H16V8Z" />
+                  <path d="M10 8H6V14H10V8Z" />
+                </svg>
+              </a>
             </li>
             <li class="performance-item " tabindex="0">
-              <svg class="perforance-icon" width="16" height="14" viewBox="0 0 16 14" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 12H0V14H16V12Z" />
-                <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" />
-              </svg>
+              <a class="toggle-view" href="catalog.html?view=card">
+                <span class="visually-hidden">Показать по одной</span>
+                <svg class="perforance-icon" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 12H0V14H16V12Z" />
+                  <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" />
+                </svg>
+              </a>
             </li>
             <li class="performance-item " tabindex="0">
-              <svg class="perforance-icon" width="16" height="14" viewBox="0 0 16 14" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 0H0V2H2V0Z" />
-                <path d="M16 0H4V2H16V0Z" />
-                <path d="M2 4H0V6H2V4Z" />
-                <path d="M16 4H4V6H16V4Z" />
-                <path d="M2 8H0V10H2V8Z" />
-                <path d="M16 8H4V10H16V8Z" />
-                <path d="M2 12H0V14H2V12Z" />
-                <path d="M16 12H4V14H16V12Z" />
-              </svg>
+              <a class="toggle-view" href="catalog.html?view=list">
+                <span class="visually-hidden">Показать списком</span>
+                <svg class="perforance-icon" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 0H0V2H2V0Z" />
+                  <path d="M16 0H4V2H16V0Z" />
+                  <path d="M2 4H0V6H2V4Z" />
+                  <path d="M16 4H4V6H16V4Z" />
+                  <path d="M2 8H0V10H2V8Z" />
+                  <path d="M16 8H4V10H16V8Z" />
+                  <path d="M2 12H0V14H2V12Z" />
+                  <path d="M16 12H4V14H16V12Z" />
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -218,6 +227,7 @@
             <li class="container-hotels-item">
               <h3>Amara Resort & Spa</h3>
               <img src="images/jpg/hotel-1.jpg" alt="Звездное небо среди скал" />
+
               <div class="hotels-info">
                 <p>Гостиница</p>
                 <p>От 4000 ₽</p>
@@ -245,8 +255,8 @@
                 </ul>
                 <p class="rating-info">Рейтинг: 8,5</p>
               </div>
-            </li>
 
+            </li>
             <li class="container-hotels-item">
               <h3>Villas at Poco Diablo</h3>
               <img src="images/jpg/hotel-2.jpg" alt="Пейзаж гор после дождя" />
@@ -278,7 +288,6 @@
                 <p class="rating-info">Рейтинг: 9,2</p>
               </div>
             </li>
-
             <li class="container-hotels-item">
               <h3>Desert Quail Inn</h3>
               <img src="images/jpg/hotel-3.jpg" alt="Скалы на рассвете" />
@@ -337,7 +346,7 @@
         </div>
         <div class="pagination">
           <ul class="pagination-list">
-            <li class="pagination-item selected" tabindex="0">1</li>
+            <li class="pagination-item selected" tabindex="-1">1</li>
             <li class="pagination-item" tabindex="0">2</li>
             <li class="pagination-item" tabindex="0">3</li>
             <li class="pagination-item" tabindex="0">4</li>
@@ -403,7 +412,7 @@
         </li>
       </ul>
       <a class="contacts-phone" href="tel:+78128121212"> +7 (812) 812-12-12 </a>
-      <a class="developer-logotype" href="https://htmlacademy.ru">
+      <a class="developer-logotype" href="https://htmlacademy.ru/intensive/htmlcss">
         <svg class="developer-logotype-icon" width="115" height="34" viewBox="0 0 115 34" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" />
