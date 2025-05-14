@@ -1066,7 +1066,7 @@ fieldset.radio-set {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  padding: 12px 20px;
+  padding: 12px 40px 12px 20px;
 }
 
 input.value-from {
@@ -1234,8 +1234,10 @@ input.value-before {
 
 .performance-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   width: 160px;
-  justify-content: space-between;
+  justify-content: flex-start;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1332,6 +1334,8 @@ input.value-before {
 
 .buttons-in-card {
   display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
   justify-content: space-between;
   margin-bottom: 16px;
 }
