@@ -6,41 +6,41 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
     <header class="header-content" data-test="header">
       <!-- Блок навигации по сайту -->
       <nav class="header-navigation">
-        <a class="header-logo" href="index.html">
+        <a class="header-logo default-link-reset" href="index.html">
           <img class="header-image" src="images/svg/header-logo.svg" width="140" height="70" alt="Логотип Sedona" />
         </a>
-        <ul class="header-navigation-list">
+        <ul class="header-navigation-list default-list-reset">
           <li class="header-navigation-item">
-            <a class="header-navigation-link" href="index.html">Главная</a>
+            <a class="header-navigation-link default-link-reset" href="index.html">Главная</a>
           </li>
           <li class="header-navigation-item">
-            <a class="header-navigation-link" href="#">О Седоне</a>
+            <a class="header-navigation-link default-link-reset" href="#">О Седоне</a>
           </li>
           <li class="header-navigation-item">
-            <a class="header-navigation-link navigation-link-current" href="#">Гостиницы</a>
+            <a class="header-navigation-link navigation-link-current default-link-reset" href="#">Гостиницы</a>
           </li>
         </ul>
-        <ul class="header-navigation-list navigation-user">
+        <ul class="header-navigation-list navigation-user default-list-reset">
           <li class="navigation-user-item">
-            <a class="navigation-user-search-link" href="#">
+            <a class="navigation-user-search-link default-link-reset" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-favourites-link" href="#">
+            <a class="navigation-user-favourites-link default-link-reset" href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="favourites-count">12</span>
             </a>
           </li>
           <li class="navigation-user-item">
-            <a class="button button-header brown" href="#">Хочу сюда!</a>
+            <a class="button button-header brown default-link-reset" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -53,9 +53,9 @@
         <header class="filter-header">
           <h1 class="title-h1 filter-header-title">Гостиницы Седоны</h1>
           <nav class="filter-navigation">
-            <ul class="breadcrubs-list">
+            <ul class="breadcrubs-list default-list-reset">
               <li class="breadcrubs-item">
-                <a class="breadcrubs-link" href="index.html">
+                <a class="breadcrubs-link default-link-reset" href="index.html">
                   <span class="visually-hidden">На главную</span>
                   <svg class="breadcrumbs-icon-home" width="13" height="13" viewBox="0 0 13 13" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -67,7 +67,7 @@
                 </a>
               </li>
               <li class="breadcrubs-item">
-                <a class="breadcrubs-link" href="catalog.html">
+                <a class="breadcrubs-link default-link-reset" href="catalog.html">
                   <span>Гостиницы</span>
                 </a>
               </li>
@@ -79,8 +79,8 @@
 
           <!--Выбор инфраструктуры(checkbox)-->
           <fieldset class="checkbox-set">
-            <legend class="checkbox-title">Инфраструктура:</legend>
-            <ul class="checkbox-list">
+            <legend class="legend-title">Инфраструктура:</legend>
+            <ul class="checkbox-list default-list-reset">
               <li class="checkbox-item">
                 <label class="label-name">
                   <input class="visually-hidden checkbox-input" type="checkbox" name="pool" checked tabindex="-1" />
@@ -107,8 +107,8 @@
 
           <!--Выбор типа жилья (radio)-->
           <fieldset class="radio-set">
-            <legend class="radio-title">Тип Жилья:</legend>
-            <ul class="radio-list">
+            <legend class="legend-title">Тип Жилья:</legend>
+            <ul class="radio-list default-list-reset">
               <li class="radio-item">
                 <label class="label-name">
                   <input class=" visually-hidden radio-input" type="radio" name="room" tabindex="-1" checked />
@@ -135,7 +135,7 @@
 
           <!--Параметры стоимости (text от и до)-->
           <fieldset class="text-set">
-            <legend class="text-title">Стоимость, ₽:</legend>
+            <legend class="legend-title">Стоимость, ₽:</legend>
             <div class="text-set-value">
               <label class="value-from-title">
                 <input class="value-from" name="value-from" type="number" placeholder="0" />
@@ -182,9 +182,9 @@
 
 
           <!--Каким образом представлять инфу? Списком, таблицей ?-->
-          <ul class="performance-list">
+          <ul class="performance-list default-list-reset">
             <li class="performance-item perforance-item-current" tabindex="0">
-              <a class="toggle-view" href="catalog.html?view=tile">
+              <a class="toggle-view default-link-reset" href="catalog.html?view=tile">
                 <span class="visually-hidden">Показать плиткой</span>
                 <svg class="perforance-icon" width="16" height="14" viewBox="0 0 16 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -198,7 +198,7 @@
               </a>
             </li>
             <li class="performance-item " tabindex="0">
-              <a class="toggle-view" href="catalog.html?view=card">
+              <a class="toggle-view default-link-reset" href="catalog.html?view=card">
                 <span class="visually-hidden">Показать по одной</span>
                 <svg class="perforance-icon" width="16" height="14" viewBox="0 0 16 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -208,7 +208,7 @@
               </a>
             </li>
             <li class="performance-item " tabindex="0">
-              <a class="toggle-view" href="catalog.html?view=list">
+              <a class="toggle-view default-link-reset" href="catalog.html?view=list">
                 <span class="visually-hidden">Показать списком</span>
                 <svg class="perforance-icon" width="16" height="14" viewBox="0 0 16 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -227,23 +227,23 @@
         </div>
 
         <div class="container-hotels">
-          <ul class="container-hotels-list">
+          <ul class="container-hotels-list default-list-reset">
             <li class="container-hotels-item">
               <h3>Amara Resort & Spa</h3>
-              <img src="images/jpg/hotel-1.jpg" alt="Звездное небо среди скал" />
+              <img src="images/jpg/hotel-1.jpg" widht="300" height="212" alt="Звездное небо среди скал" />
 
               <div class="hotels-info">
                 <p>Гостиница</p>
                 <p>От 4000 ₽</p>
               </div>
               <div class="buttons-in-card">
-                <a class="button more-button brown" href="#">Подробнее</a>
+                <a class="button more-button brown default-link-reset" href="#">Подробнее</a>
                 <button class="button favorite-button blue" type="submit">
                   В избранное
                 </button>
               </div>
               <div class="hotels-rating">
-                <ul class="stars">
+                <ul class="stars default-list-reset">
                   <li class="stars-item">
                   </li>
                   <li class="stars-item">
@@ -258,19 +258,19 @@
             </li>
             <li class="container-hotels-item">
               <h3>Villas at Poco Diablo</h3>
-              <img src="images/jpg/hotel-2.jpg" alt="Пейзаж гор после дождя" />
+              <img src="images/jpg/hotel-2.jpg" width="300" height="212" alt="Пейзаж гор после дождя" />
               <div class="hotels-info">
                 <p>Гостиница</p>
                 <p>От 5000 ₽</p>
               </div>
               <div class="buttons-in-card">
-                <a class="more-button brown button" href="#">Подробнее</a>
+                <a class="more-button brown button default-link-reset" href="#">Подробнее</a>
                 <button class="favorite-button button green" type="submit">
                   В избранное
                 </button>
               </div>
               <div class="hotels-rating">
-                <ul class="stars">
+                <ul class="stars default-list-reset">
                   <li class="stars-item">
                   </li>
                   <li class="stars-item">
@@ -285,19 +285,19 @@
             </li>
             <li class="container-hotels-item">
               <h3>Desert Quail Inn</h3>
-              <img src="images/jpg/hotel-3.jpg" alt="Скалы на рассвете" />
+              <img src="images/jpg/hotel-3.jpg" width="300" height="212" alt="Скалы на рассвете" />
               <div class="hotels-info">
                 <p>Гостиница</p>
                 <p>От 2500 ₽</p>
               </div>
               <div class="buttons-in-card">
-                <a class="more-button brown button" href="#">Подробнее</a>
+                <a class="more-button brown button default-link-reset" href="#">Подробнее</a>
                 <button class="favorite-button button blue" type="submit">
                   В избранное
                 </button>
               </div>
               <div class="hotels-rating">
-                <ul class="stars">
+                <ul class="stars default-list-reset">
                   <li class="stars-item">
                   </li>
                   <li class="stars-item">
@@ -310,19 +310,19 @@
             </li>
             <li class="container-hotels-item">
               <h3>GreenTree Inn</h3>
-              <img src="images/jpg/hotel-4.jpg" alt="Ночной пейзаж на скалы и звезды" />
+              <img src="images/jpg/hotel-4.jpg" width="300" height="212" alt="Ночной пейзаж на скалы и звезды" />
               <div class="hotels-info">
                 <p>Гостиница</p>
                 <p>От 1500 ₽</p>
               </div>
               <div class="buttons-in-card">
-                <a class="more-button brown button" href="#">Подробнее</a>
+                <a class="more-button brown button default-link-reset" href="#">Подробнее</a>
                 <button class="favorite-button button blue" type="submit">
                   В избранное
                 </button>
               </div>
               <div class="hotels-rating">
-                <ul class="stars">
+                <ul class="stars default-list-reset">
                   <li class="stars-item">
                   </li>
                   <li class="stars-item">
@@ -334,7 +334,7 @@
           </ul>
         </div>
         <div class="pagination">
-          <ul class="pagination-list">
+          <ul class="pagination-list default-list-reset">
             <li class="pagination-item selected" tabindex="-1">1</li>
             <li class="pagination-item" tabindex="0">2</li>
             <li class="pagination-item" tabindex="0">3</li>
@@ -368,9 +368,9 @@
       </section>
     </main>
     <footer class="footer-content" data-test="footer">
-      <ul class="social-list">
+      <ul class="social-list default-list-reset">
         <li class="social-item">
-          <a class="social-link" href="#">
+          <a class="social-link default-link-reset" href="#">
             <svg class="social-icon" width="25" height="15" viewBox="0 0 25 15" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -380,7 +380,7 @@
           </a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="#">
+          <a class="social-link default-link-reset" href="#">
             <svg class="social-icon telegram" width="18" height="16" viewBox="0 0 18 16" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -390,7 +390,7 @@
           </a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="#">
+          <a class="social-link default-link-reset" href="#">
             <svg class="social-icon" width="23" height="18" viewBox="0 0 23 18" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -400,8 +400,8 @@
           </a>
         </li>
       </ul>
-      <a class="contacts-phone" href="tel:+78128121212"> +7 (812) 812-12-12 </a>
-      <a class="developer-logotype" href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="contacts-phone default-link-reset" href="tel:+78128121212"> +7 (812) 812-12-12 </a>
+      <a class="developer-logotype default-link-reset" href="https://htmlacademy.ru/intensive/htmlcss">
         <svg class="developer-logotype-icon" width="115" height="34" viewBox="0 0 115 34" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" />
