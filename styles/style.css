@@ -134,12 +134,16 @@ body {
 }
 
 .button-header {
+  width: 160px;
   padding: 8px 34px;
+  box-sizing: border-box;
 }
 
 .button-search {
   font-size: 20px;
   line-height: 36px;
+  min-width: 376px;
+  box-sizing: border-box;
 }
 
 .subscribe-button {
@@ -270,6 +274,11 @@ a {
   position: relative;
   display: block;
   box-sizing: border-box;
+}
+
+.header-navigation-item:hover,
+.navigation-user-item:hover {
+  opacity: 0.6;
 }
 
 .navigation-link-current::before {
@@ -437,15 +446,15 @@ a {
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  border-bottom: 2px solid #0000004d;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-.advantages-item:first-child .advantages-content-box .title-h3:after,
-.advantages-item:last-child .advantages-content-box .title-h3:after {
+.advantages-item:first-child .title-h3:after,
+.advantages-item:last-child .title-h3:after {
   border-color: inherit;
   opacity: 0.3;
 }
-/* тут остановился 6 мая в 15:00 */
+
 /* ACTION */
 
 .action {
@@ -470,7 +479,7 @@ a {
 .possibility-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .possibility-list li:not(:nth-child(2)) {
@@ -481,23 +490,34 @@ a {
   width: 400px;
   min-height: 385px;
   display: flex;
+  justify-content: center;
 }
 
 .possibility-content {
+  align-self: center;
   width: 230px;
-  margin: auto;
-  text-align: center;
 }
 
-.possibility-content img {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 30px;
+.possibility-item:nth-child(1) .possibility-content {
+  background-image: url("../images/svg/vector-home.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.possibility-item:nth-child(2) .possibility-content {
+  background-image: url("../images/svg/burger.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.possibility-item:nth-child(3) .possibility-content {
+  background-image: url("../images/svg/vector-present.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 }
 
 .possibility-content > h3 {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 102px auto 30px auto;
 }
 
 .possibility-content > p {
@@ -804,6 +824,15 @@ a {
   right: 42px;
   width: 256px;
   min-height: 110px;
+  display: none;
+  margin: 0;
+  background-color: rgba(51, 51, 51, 1);
+  color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  padding: 15px 18px 18px 22px;
+  font-size: 16px;
+  line-height: 20px;
+  box-sizing: border-box;
 }
 
 .tooltip-toggle {
@@ -815,25 +844,13 @@ a {
   height: 26px;
   cursor: pointer;
   position: absolute;
-  top: -41px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  left: 59px;
+  transform: translateY(-50%);
 }
-
-.tooltip-toggle:focus + .tooltip-content,
-.tooltip-toggle:hover + .tooltip-content {
+.tooltip-toggle:focus + .tooltip,
+.tooltip-toggle:hover + .tooltip {
   display: block;
-}
-
-.tooltip-content {
-  margin: 0;
-  background-color: rgba(51, 51, 51, 1);
-  color: rgba(255, 255, 255, 1);
-  border-radius: 10px;
-  padding: 15px 18px 18px 22px;
-  font-size: 16px;
-  line-height: 20px;
-  display: none;
 }
 
 .tooltip-content::before {
@@ -1150,7 +1167,12 @@ input.value-before {
   position: relative;
 }
 
-.slider__start-pin {
+.slider-start-pin:active,
+.slider-finish-pin:active {
+  outline: 2px solid rgba(131, 179, 211, 1);
+}
+
+.slider-start-pin {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -1162,7 +1184,7 @@ input.value-before {
   cursor: pointer;
 }
 
-.slider__finish-pin {
+.slider-finish-pin {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -1174,7 +1196,7 @@ input.value-before {
   cursor: pointer;
 }
 
-.slider__process {
+.slider-process {
   position: absolute;
   width: 226px;
   top: 0;
@@ -1302,7 +1324,6 @@ input.value-before {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 
 .container-hotels-item > img {
@@ -1358,13 +1379,9 @@ input.value-before {
 }
 
 .stars-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.stars-item img {
-  align-self: center;
+  background-image: url("../images/png/vector-star.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .rating-info {
