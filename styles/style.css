@@ -283,6 +283,11 @@ body {
   opacity: 0.6;
 }
 
+.header-navigation-item:active,
+.navigation-user-item:active {
+  opacity: 0.3;
+}
+
 .navigation-link-current::before {
   position: absolute;
   right: 16px;
